@@ -1,0 +1,41 @@
+{
+    "title": "Asset Metadata",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "Unique Identifies the asset to which this NFT represents",
+            "value": 6556
+        },
+        "name": {
+            "type": "string",
+            "description": "Identifies the asset to which this NFT represents",
+            "value": "car"
+        },
+        "description": {
+            "type": "string",
+            "description": "Describes the asset to which this NFT represents",
+            "value": "car for tranport"
+        },
+        "image": {
+            "type": "string",
+            "description": "A URI pointing to a resource with mime type image/* representing the asset to which this NFT represents. Consider making any images at a width between 320 and 1080 pixels and aspect ratio between 1.91:1 and 4:5 inclusive.",
+            "value": "https://ipfs.io/ipfs/bafkreibtvrxwdlw4fmmrinlgoo5pikt6zr4bb4r2gi2bh2a5jdgy6uyrvq"
+        },
+        "value": {
+            "type": "integer",
+            "description": "Describes the quantity of assets to which this NFT represents",
+            "value": 10
+        },
+        "size": {
+            "type": "integer",
+            "description": "Describes the size of assets to which this NFT represents",
+            "value": 10
+        },
+        "address": {
+            "type": "string",
+            "description": "Describes the address of assets to which this NFT represents",
+            "value": "jaipur"
+        }
+    }
+}

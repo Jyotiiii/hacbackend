@@ -1,0 +1,47 @@
+ Admin :- 0x38d59026EA4F66fe7844d19475131eb1b0D761F5
+ AdminPrivate key :- e0ac117e09e8dc1de89b79b7862896b18ca56c29a75d109ced2b46454b440876
+
+1. paticipant three emplyer employee validator admin=is owner
+2.need function called only by owner
+3.Regstration of paticipants role:- emplyee ,employer,admib
+4. create contract only by owner (agreement)
+emplyer create contract with key id = key[creter]= value(information(name,role))
+details :- contracts
+array of emplyee 
+start date
+duration
+price
+validator[]  array
+
+function Accept:-through by employee(all emplyee are agree to this agreement)
+
+creation of milestones through Admin:-
+contract Id:- no of milestones [description,Amount,milestoneduration,assigneto]
+1
+2
+3
+4
+one to many()
+validation :- no of count of milestone is equal to description,.....all fields
+amount of price of aggreement == count of milestone of amount
+total duration agreement == duration of milestone
+id is exist in array of employee
+
+
+disagree ()
+{
+if function
+remove from array of empoyee in contract creation
+}
+
+deleverable milestone{
+employee id,contract id ,milestone index,submmision date,submmision time,filehash}
+
+validate contract{validator id}
+valdate milestone{validator id}
+validate delevery{validator id}
+
+end contract id {time stamp,employer id , contract id]
+approve delevery of milestone
+decline delevery of milestone.
+

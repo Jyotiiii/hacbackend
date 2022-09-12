@@ -1,0 +1,18 @@
+
+./network.sh deployCC -ccn fieHash -ccp ../token-erc-1155/chaincode-go/newchaincode -ccl go
+
+
+peer chaincode invoke "${TARGET_TLS_OPTIONS[@]}" -C mychannel -n erc1155 -c "{\"function\":\"SetURI\",\"Args\":[\"fffffeDUwOTo6Q049cGVyc29uMSxPVT1jbGllbnQsTz1IeXBlcmxlZGdlcixTVD1Ob3J0aCBDYXJvbGluYSxDPVVTOjpDTj1jYS5vcmcxLmV4YW1wbGUuY29tLE89b3JnMS5leGFtcGxlLmNvbSxMPUR1cmhhbSxTVD1Ob3J0aCBDYXJvbGluYSxDPVVT\"]}" --waitForEvent
+
+
+peer chaincode invoke "${TARGET_TLS_OPTIONS[@]}" -C mychannel -n erc1155 -c "{\"function\":\"SetURI\",\"Args\":[\"https://ipfs.infura.io/ipfs/QmbGxTX6NiuiXkSJ5ZGVMUhQ3t1ih2QPD3xLQWzsrQcka1/4{id}.json\"]}" --waitForEvent
+
+peer chaincode invoke "${TARGET_TLS_OPTIONS[@]}" -C mychannel -n erc1155 -c "{\"function\":\"URI\",\"Args\":[\"https://ipfs.infura.io/ipfs/QmbGxTX6NiuiXkSJ5ZGVMUhQ3t1ih2QPD3xLQWzsrQcka1/4{id}.json\"]}" --waitForEvent
+
+peer chaincode query -C mychannel -n erc1155 -c "{\"function\":\"URI\",\"Args\":[\"4\"]}"
+
+
+https://{id}.ipfs.infura-ipfs.io/metadata.json
+
+https://bafybeih5t2qhydmebjxp76tbifrwvd6woowieu6qgxezcfam3e4h7wsgei.ipfs.infura-ipfs.io/metadata.json
+

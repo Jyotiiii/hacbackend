@@ -1,0 +1,41 @@
+{
+    "title": "Asset Metadata",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "Unique Identifies the asset to which this NFT represents",
+            "value": 1212
+        },
+        "name": {
+            "type": "string",
+            "description": "Identifies the asset to which this NFT represents",
+            "value": "land for making flat"
+        },
+        "description": {
+            "type": "string",
+            "description": "Describes the asset to which this NFT represents",
+            "value": "land for making some flat"
+        },
+        "image": {
+            "type": "string",
+            "description": "A URI pointing to a resource with mime type image/* representing the asset to which this NFT represents. Consider making any images at a width between 320 and 1080 pixels and aspect ratio between 1.91:1 and 4:5 inclusive.",
+            "value": "https://ipfs.io/ipfs/bafkreihmoetd3wlqguxnzqmoqspyigeocnxjtjdmblwvqf7sn7owhuvxom"
+        },
+        "value": {
+            "type": "integer",
+            "description": "Describes the quantity of assets to which this NFT represents",
+            "value": 100
+        },
+        "size": {
+            "type": "integer",
+            "description": "Describes the size of assets to which this NFT represents",
+            "value": 1000
+        },
+        "address": {
+            "type": "string",
+            "description": "Describes the address of assets to which this NFT represents",
+            "value": "noida India"
+        }
+    }
+}
